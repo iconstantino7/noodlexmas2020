@@ -1,0 +1,211 @@
+﻿@page
+@model AudreyXmas2020.Pages.LetterModel
+@{
+}
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Minimal F</title>
+    <meta name="description" content="Minimal Form Interface: Simplistic, single input view form" />
+    <meta name="keywords" content="form, minimal, interface, single input, big form, responsive form, transition" />
+    <meta name="author" content="Codrops" />
+    <link rel="stylesheet" type="text/css" href="~/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/component.css" />
+    <script src="~/js/modernizr.custom.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        .final-message p span {
+            color: black !important;
+            font-weight: bold !important;
+        }
+    </style>
+    <div class="container">
+
+        <header class="codrops-header">
+            <h1 class="text-light">Letter to Santa Claus <span>Input</span></h1>
+        </header>
+        <section>
+            <form id="theForm" class="simform" autocomplete="off">
+                <div class="simform-inner">
+                    <ol class="questions">
+                        <li>
+                            <span><label for="q1">What's your name?</label></span>
+                            <input id="q1" name="q1" type="text" />
+                        </li>
+                        <li>
+                            <span><label for="q2">Enter a number?</label></span>
+                            <input id="q2" name="q2" type="text" />
+                        </li>
+                        <li>
+                            <span><label for="q3">Enter another number:</label></span>
+                            <input id="q3" name="q3" type="text" />
+                        </li>
+                        <li>
+                            <span><label for="q4">Enter a third number?</label></span>
+                            <input id="q4" name="q4" type="text" />
+                        </li>
+                        <li>
+                            <span><label for="q5">Enter a type of animal:</label></span>
+                            <input id="q5" name="q5" type="text" />
+                        </li>
+                        <li>
+                            <span><label for="q5b">Enter another type of animal:</label></span>
+                            <input id="q5b" name="q5b" type="text" />
+                        </li>
+                        <li>
+                            <span><label for="q6">Enter the name of a city:</label></span>
+                            <input id="q6" name="q6" type="text" />
+                        </li>
+                        <li>
+                            <span><label for="q7">Enter an adjective:</label></span>
+                            <input id="q7" name="q7" type="text" />
+                        </li>
+                        <li>
+                            <span><label for="q8">Enter a different adjective:</label></span>
+                            <input id="q8" name="q8" type="text" />
+                        </li>
+                        <li>
+                            <span><label for="q9">Enter an even awesomer adjective:</label></span>
+                            <input id="q9" name="q9" type="text" />
+                        </li>
+                        <li>
+                            <span><label for="q10">Enter the name of a country:</label></span>
+                            <input id="q10" name="q10" type="text" />
+                        </li>
+                        <li>
+                            <span><label for="q11">Enter the name of a friend:</label></span>
+                            <input id="q11" name="q11" type="text" />
+                        </li>
+                        <li>
+                            <span><label for="q12">Enter an adjective:</label></span>
+                            <input id="q12" name="q12" type="text" />
+                        </li>
+                        <li>
+                            <span><label for="q13">Enter a number:</label></span>
+                            <input id="q13" name="q13" type="text" />
+                        </li>
+                        <li>
+                            <span><label for="q14">Enter a noun:</label></span>
+                            <input id="q14" name="q14" type="text" />
+                        </li>
+                        <li>
+                            <span><label for="q15">Enter a verb:</label></span>
+                            <input id="q15" name="q15" type="text" />
+                        </li>
+                        <li>
+                            <span><label for="q16">Enter a noun:</label></span>
+                            <input id="q16" name="q16" type="text" />
+                        </li>
+                        <li>
+                            <span><label for="q17">Enter a language: (eg. Italian, Spanish..)</label></span>
+                            <input id="17" name="q17" type="text" />
+                        </li>
+                        <li>
+                            <span><label for="q18">Enter an adjective:</label></span>
+                            <input id="q18" name="q18" type="text" />
+                        </li>
+                        <li>
+                            <span><label for="q19">Enter another adjective:</label></span>
+                            <input id="q19" name="q19" type="text" />
+                        </li>
+                        <li>
+                            <span><label for="q20">Enter a noun:</label></span>
+                            <input id="q20" name="q20" type="text" />
+                        </li>
+                        <li>
+                            <span><label for="q21">Enter another noun:</label></span>
+                            <input id="q21" name="q21" type="text" />
+                        </li>
+                        <li>
+                            <span><label for="q22">Enter a type of food:</label></span>
+                            <input id="q22" name="q22" type="text" />
+                        </li>
+                        <li>
+                            <span><label for="q23">Enter a type of drink:</label></span>
+                            <input id="q23" name="q23" type="text" />
+                        </li>
+                        <li>
+                            <span><label for="q24">Enter a type of food:</label></span>
+                            <input id="q24" name="q24" type="text" />
+                        </li>
+                        <li>
+                            <span><label for="q24">Enter an adjective:</label></span>
+                            <input id="q24" name="q24" type="text" />
+                        </li>
+                    </ol><!-- /questions -->
+                    <button class="submit" type="submit">Send answers</button>
+                    <div class="controls">
+                        <button class="next"></button>
+                        <div class="progress"></div>
+                        <span class="number">
+                            <span class="number-current"></span>
+                            <span class="number-total"></span>
+                        </span>
+                        <span class="error-message"></span>
+                    </div><!-- / controls -->
+                </div><!-- /simform-inner -->
+                <div class="final-message" style="background-color: white !important;">
+                    <p style="font-family: 'Mountains of Christmas' !important;">
+                        My name is <span id="1"></span> and I am <span></span> years old. I have <span></span> brothers and <span></span> sisters, a <span></span> and a <span></span>. I live in <span></span>. When I woke up this morning it was <span></span> and <span></span> outside. It mus be much <span></span>-er where you live in <span></span>! My <span></span> said I've been a very <span></span> girl this year, so I will ask you for <span></span> gifts this Christmas. I would like a <span></span> that can <span></span>, and a <span></span> that speaks <span></span>. If you think I've been extra <span></span> this year, I would like a <span></span> <span></span> too. Whne you come down the <span></span> at the house on Christmas Eve we will have <span></span> and <span></span> waiting for you! I hope you like thme! We will leave out some <span></span> for the reindeer too! Have a <span></span> flight!
+                        <br />
+                        <br />
+                        
+                        <a href="Stories">Back to Stories</a>
+                    </p>
+                </div>
+            </form><!-- /simform -->
+        </section>
+
+    </div><!-- /container -->
+    <script src="~/js/classie.js"></script>
+    <script src="~/js/stepsForm.js"></script>
+    <script>
+        var theForm = document.getElementById('theForm');
+
+        new stepsForm(theForm, {
+            onSubmit: function (form) {
+                // hide form
+                classie.addClass(theForm.querySelector('.simform-inner'), 'hide');
+
+                /*
+                form.submit()
+                or
+                AJAX request (maybe show loading indicator while we don't have an answer..)
+                */
+
+                // let's just simulate something...
+                var messageEl = theForm.querySelector('.final-message');
+                $('#1').html($('#q1').val());
+                classie.addClass(messageEl, 'show');
+            }
+        });
+    </script>
+
+    <script src="_framework/blazor.server.js"></script>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="~/js/jquery.flurry.min.js"></script>
+    <script>
+        $('body').flurry({
+            character: '❅❆',
+            height: 1240,
+            speed: 5400,
+            wind: 200,
+            windVariance: 220,
+            frequency: 7,
+            large: 40,
+            small: 4
+        });
+
+    </script>
+</body>

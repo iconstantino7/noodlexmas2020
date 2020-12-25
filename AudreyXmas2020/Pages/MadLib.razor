@@ -1,0 +1,50 @@
+﻿@using AudreyXmas2020.Data
+
+@page "/madlib"
+
+@inject CustomHttpClient Http
+@inject AppSettingsService AppSettingsService
+
+<h2>Story Details</h2>
+
+@if (madLibs == null)
+{
+    <img src="./basicloader.gif" />
+
+}
+else
+{
+    <table class='table'>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Designation</th>
+                <th>Company</th>
+            </tr>
+        </thead>
+        <tbody>
+            @madLibs
+            @foreach (var madLib in madLibs)
+            {
+                <tr>
+                    <td>@madLib.</td>
+                </tr>
+
+
+
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    MadLib[] madLibs;
+    string baseUrl;
+
+    protected override async Task OnInitializedAsync()
+    {
+        baseUrl = AppSettingsService.GetBaseUrl();
+        madLibs = await Http.GetJsonAsync<MadLib[]>(baseUrl + "/api/madlibs/get");
+    }
+}
