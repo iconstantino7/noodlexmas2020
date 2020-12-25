@@ -191,3 +191,5 @@ C:\Users\icaiv\source\repos\AudreyXmas2020\AudreyXmas2020\obj\Debug\netcoreapp3.
 C:\Users\icaiv\source\repos\AudreyXmas2020\AudreyXmas2020\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Letter.razor.g.cs
 C:\Users\icaiv\source\repos\AudreyXmas2020\AudreyXmas2020\obj\Debug\netcoreapp3.1\Razor\Pages\Letter.razor.g.cs
 C:\Users\icaiv\source\repos\AudreyXmas2020\AudreyXmas2020\obj\Debug\netcoreapp3.1\Razor\Pages\Letter.cshtml.g.cs
+C:\Users\icaiv\source\repos\AudreyXmas2020\AudreyXmas2020\obj\Debug\netcoreapp3.1\Razor\Pages\video.cshtml.g.cs
+C:\Users\icaiv\source\repos\AudreyXmas2020\AudreyXmas2020\obj\Debug\netcoreapp3.1\Razor\Pages\Reindeer.cshtml.g.cs
